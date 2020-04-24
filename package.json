@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "docs": "npm run docs:build -- --disableCoverage --disablePrivate --disableInternal",
+    "docs:build": "compodoc -p src/tsconfig.json -d docs --hideGenerator"
   },
   "private": true,
   "dependencies": {
